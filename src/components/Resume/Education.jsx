@@ -26,7 +26,7 @@ const Education = () => {
                             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
                             <time className="block mb-2 text-xl font-normal leading-none text-gray-400 dark:text-gray-500">Green University of Bangladesh</time>
                             <p></p>
-                            <p className="text-base font-normal text-gray-500 dark:text-gray-400">Dept. of Computer science of engineering. (2021-present)</p>
+                            <p className="text-base font-normal text-gray-500 dark:text-gray-400">Dept. of Computer science and engineering. (2021-present)</p>
                         </div>
                     </li>
                     <li className="relative mb-6 sm:mb-0">

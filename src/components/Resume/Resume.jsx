@@ -10,7 +10,7 @@ const Resume = () => {
                 <h3 className=' text-3xl font-bold text-teal-600 md:mb-4'>My Skills</h3>
                 <div className=' md:grid grid-cols-2 gap-5'>
                     <div className=' md:grid grid-rows-3'>
-                        <SkillBar skill={"React"} rate={"90%"} w={"70"}></SkillBar>
+                        <SkillBar skill={"React"} rate={"90%"} width={"50"} name={50}></SkillBar>
                         <SkillBar skill={"node"} rate={"70%"}></SkillBar>
                         <SkillBar skill={"express"} rate={"70%"}></SkillBar>
                         <SkillBar skill={"mongodb"} rate={"80%"}></SkillBar>
@@ -26,6 +26,7 @@ const Resume = () => {
                 </div>
             </div>
             <Education></Education>
+            
         </>
     );
 };

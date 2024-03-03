@@ -1,7 +1,8 @@
 
 
-const SkillBar = ({ skill, rate, w }) => {
-    const width = `${w}%`;
+const SkillBar = ({ skill, rate, width, name }) => {
+    const w = parseInt(width);
+    console.log(name);
     return (
         <div className=''>
             <h1 className=' uppercase text-[#1e293b] animate-pulse'>{skill}</h1>

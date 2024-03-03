@@ -1,16 +1,24 @@
 import { useState } from 'react';
 import { AiOutlineBars } from 'react-icons/ai'
 import { GrLogout } from 'react-icons/gr'
+import { FaHome } from "react-icons/fa";
 import { FcSettings } from 'react-icons/fc'
+import { MdContactPage } from "react-icons/md";
 import { Link, NavLink } from 'react-router-dom';
 import Logo from './Logo';
+import { RiProjector2Line } from "react-icons/ri";
+import { MdOutlinePhoneIphone } from "react-icons/md";
 
 const Sidebar = () => {
     const [isActive, setActive] = useState('false')
-    // const [role, setRole] = useState('host')
     const [toggle, setToggle] = useState(false)
     const handleToggle = () => {
         setActive(!isActive)
+    }
+    const handleWhatsapp = () => {
+        // <a href=" https://wa.me/01672589498"></a>
+        window.open("https://wa.me/01672589498", "_blank");
+     
     }
     return (
         <>
@@ -37,12 +45,12 @@ const Sidebar = () => {
                 <div>
                     {/* Branding & Profile Info */}
                     <div>
-                        <div className='w-full hidden md:flex py-2 justify-center items-center bg-rose-100 mx-auto'>
+                        <div onClick={handleWhatsapp}  className='w-full hidden md:flex py-2 justify-center items-center bg-rose-100 mx-auto'>
                             <Logo />
-
                         </div>
+
                         <div className='flex flex-col items-center mt-6 -mx-2'>
-                            <Link to='/dashboard'>
+                            <Link to='/'>
                                 <img
                                     className='object-cover w-24 h-24 mx-2 rounded-full'
                                     src="https://i.ibb.co/1qpph0g/WIN-20231021-18-40-53-Pro.jpg"
@@ -50,13 +58,13 @@ const Sidebar = () => {
                                     referrerPolicy='no-referrer'
                                 />
                             </Link>
-                            <Link to='/dashboard'>
-                                <h4 className='mx-2 mt-2 font-medium text-gray-800  hover:underline'>
+                            <Link to=''>
+                                <h4 className='mx-2 mt-2 font-medium text-gray-800  hover:underline hover:text-teal-700'>
                                     Mostafizur Rahman
                                 </h4>
                             </Link>
-                            <Link to='/dashboard'>
-                                <p className='mx-2 mt-1 text-sm font-medium text-gray-600  hover:underline'>
+                            <Link to=''>
+                                <p className='mx-2 mt-1 text-sm font-medium text-gray-600  hover:underline hover:text-teal-700'>
                                     mostafiz.cse.1257@gmail.com
                                 </p>
                             </Link>
@@ -66,11 +74,11 @@ const Sidebar = () => {
                     <NavLink
                         to='/'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
+                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1] text-gray-700' : 'text-gray-600'
                             }`
                         }
                     >
-                        <FcSettings className='w-5 h-5' />
+                        <FaHome className='w-5 h-5' />
 
                         <span className='mx-4 font-medium'>Home</span>
                     </NavLink>
@@ -88,18 +96,18 @@ const Sidebar = () => {
                     <NavLink
                         to='/resume'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
+                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1]  text-gray-700' : 'text-gray-600'
                             }`
                         }
                     >
-                        <FcSettings className='w-5 h-5' />
+                        <MdContactPage className='w-5 h-5' />
 
                         <span className='mx-4 font-medium'>Resume</span>
                     </NavLink>
                     <NavLink
                         to='/portfolio'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
+                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1]  text-gray-700' : 'text-gray-600'
                             }`
                         }
                     >
@@ -110,11 +118,11 @@ const Sidebar = () => {
                     <NavLink
                         to='/blog'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
+                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1] text-gray-700' : 'text-gray-600'
                             }`
                         }
                     >
-                        <FcSettings className='w-5 h-5' />
+                        <RiProjector2Line className='w-5 h-5' />
 
                         <span className='mx-4 font-medium'>Blog</span>
                     </NavLink>
@@ -125,11 +133,11 @@ const Sidebar = () => {
                     <NavLink
                         to='/contract'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
+                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1]  text-gray-700' : 'text-gray-600'
                             }`
                         }
                     >
-                        <FcSettings className='w-5 h-5' />
+                        <MdOutlinePhoneIphone className='w-5 h-5' />
 
                         <span className='mx-4 font-medium'>Contract</span>
                     </NavLink>
