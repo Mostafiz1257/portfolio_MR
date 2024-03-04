@@ -74,31 +74,21 @@ const Sidebar = () => {
                     <NavLink
                         to='/'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1] text-gray-700' : 'text-gray-600'
-                            }`
-                        }
+                        `flex items-center px-4 py-2 mt-1  transition-colors duration-200 transform  hover:bg-teal-700   hover:text-white  ${isActive ? 'bg-teal-800 text-white' : 'text-gray-600'
+                        }`
+                    }
                     >
                         <FaHome className='w-5 h-5' />
 
                         <span className='mx-4 font-medium'>Home</span>
                     </NavLink>
-                    {/* <NavLink
-                        to='/about'
-                        className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-gray-300  text-gray-700' : 'text-gray-600'
-                            }`
-                        }
-                    >
-                        <FcSettings className='w-5 h-5' />
-
-                        <span className='mx-4 font-medium'>About</span>
-                    </NavLink> */}
+            
                     <NavLink
                         to='/resume'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1]  text-gray-700' : 'text-gray-600'
-                            }`
-                        }
+                        `flex items-center px-4 py-2 mt-1  transition-colors duration-200 transform  hover:bg-teal-700   hover:text-white  ${isActive ? 'bg-teal-800 text-white' : 'text-gray-600'
+                        }`
+                    }
                     >
                         <MdContactPage className='w-5 h-5' />
 
@@ -107,9 +97,9 @@ const Sidebar = () => {
                     <NavLink
                         to='/portfolio'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1]  text-gray-700' : 'text-gray-600'
-                            }`
-                        }
+                        `flex items-center px-4 py-2 mt-1  transition-colors duration-200 transform  hover:bg-teal-700   hover:text-white  ${isActive ? 'bg-teal-800 text-white' : 'text-gray-600'
+                        }`
+                    }
                     >
                         <FcSettings className='w-5 h-5' />
 
@@ -118,9 +108,9 @@ const Sidebar = () => {
                     <NavLink
                         to='/blog'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1] text-gray-700' : 'text-gray-600'
-                            }`
-                        }
+                        `flex items-center px-4 py-2 mt-1  transition-colors duration-200 transform  hover:bg-teal-700   hover:text-white  ${isActive ? 'bg-teal-800 text-white' : 'text-gray-600'
+                        }`
+                    }
                     >
                         <RiProjector2Line className='w-5 h-5' />
 
@@ -133,7 +123,7 @@ const Sidebar = () => {
                     <NavLink
                         to='/contract'
                         className={({ isActive }) =>
-                            `flex items-center px-4 py-2 mt-1  transition-colors duration-300 transform  hover:bg-gray-300   hover:text-gray-700 ${isActive ? 'bg-[#75e1e1]  text-gray-700' : 'text-gray-600'
+                            `flex items-center px-4 py-2 mt-1  transition-colors duration-200 transform  hover:bg-teal-700   hover:text-white  ${isActive ? 'bg-teal-800 text-white' : 'text-gray-600'
                             }`
                         }
                     >
@@ -143,7 +133,7 @@ const Sidebar = () => {
                     </NavLink>
                     <button
                         // onClick={handleLogOut}
-                        className='flex w-full items-center px-4 py-2 mt-1 text-gray-600 hover:bg-gray-300   hover:text-gray-700 transition-colors duration-300 transform'
+                        className='flex w-full items-center px-4 py-2 mt-1 text-gray-600     hover:bg-teal-700   hover:text-white transition-colors duration-200 transform'
                     >
                         <GrLogout className='w-5 h-5' />
 

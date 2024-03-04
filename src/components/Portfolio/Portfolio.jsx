@@ -19,7 +19,7 @@ const Portfolio = () => {
     window.open('https://the-chef-client-5dc25.web.app/', '_blank');
   }
   const projectFourLive = () => {
-    window.open('https://the-chef-client-5dc25.web.app/', '_blank');
+    window.open('https://aircnc-f1f96.firebaseapp.com/', '_blank');
   }
   const projectSixLive = () => {
     window.open('https://final-project-client-sid-43532.firebaseapp.com/', '_blank');
@@ -30,8 +30,8 @@ const Portfolio = () => {
 
   return (
     <div id='project'>
-      <div className=' grid md:grid-cols-3 gap-4 md:gap-4 mx-12' >
-        <div className='overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl' data-aos="flip-left"
+      <div  className=' grid md:grid-cols-3 gap-4 md:gap-4 mx-12' >
+        <div onClick={projectFourLive} className='overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl' data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000">
           <img
