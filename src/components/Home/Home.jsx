@@ -18,12 +18,14 @@ const Home = () => {
     };
 
     return (
-        <>
-            <div className="flex justify-center items-center h-screen">
+        <div className="">
+            <div className="flex justify-center items-center h-screen ">
                 <div className='text-center'>
-                    <h5 className='mt-[-200px] text-teal-600 text-4xl font-bold items-center flex justify-center' data-aos="fade-down-right">Hi, I am a Full stack Developer </h5>
+                    <h5 className='mt-[-200px] text-teal-600 text-4xl font-bold items-center flex justify-center bg-clip-text text-transparent bg-gradient-to-r from-teal-800 to-teal-800' data-aos="fade-down-right ">Hi, I am a Full stack Developer </h5>
                     <p
-                        className='sm:justify-between sm:mt-8 text-center text-2xl md:w-3/4 m-auto mt-6 items-center flex justify-center' data-aos="fade-down-left">I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.</p>
+                        className='sm:justify-between sm:mt-8 text-center text-2xl md:w-3/4 m-auto mt-6 items-center flex justify-center text-gray-600' data-aos="fade-down-left ">
+
+                        I specialize in MERN stack development, crafting websites with clean code and appealing designs. My goal is to deliver seamless user experiences, blending frontend finesse with backend efficiency. With a focus on user satisfaction, I prioritize both functionality and aesthetics in my work.</p>
                     <div className='space-x-6 text-5xl text-teal-500 font-bold items-center flex mt-5 justify-center ' data-aos="fade-up"
                         data-aos-duration="2000"
                     >
@@ -40,7 +42,7 @@ const Home = () => {
             </div>
 
 
-        </>
+        </div>
     );
 };
 

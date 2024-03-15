@@ -30,8 +30,8 @@ const Portfolio = () => {
 
   return (
     <div id='project'>
-      <div  className=' grid md:grid-cols-3 gap-4 md:gap-4 mx-12' >
-        <div onClick={projectFourLive} className='overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-lg hover:shadow-2xl' data-aos="flip-left"
+      <div className=' grid md:grid-cols-3 gap-4 md:gap-4 md:mx-12 ' >
+        <div onClick={projectFourLive} className=' overflow-hidden relative transition duration-200 transform hover:-translate-y-2 rounded shadow-2xl shadow-teal-700 hover:shadow-2xl' data-aos="flip-left"
           data-aos-easing="ease-out-cubic"
           data-aos-duration="1000">
           <img

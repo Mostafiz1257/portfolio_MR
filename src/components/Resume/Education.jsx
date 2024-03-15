@@ -23,7 +23,7 @@ const Education = () => {
                             <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div className="mt-3 sm:pe-8">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.0.0</h3>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white"></h3>
                             <time className="block mb-2 text-xl font-normal leading-none text-gray-400 dark:text-gray-500">Green University of Bangladesh</time>
                             <p></p>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">Dept. of Computer science and engineering. (2021-present)</p>
@@ -39,7 +39,7 @@ const Education = () => {
                             <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div className="mt-3 sm:pe-8">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.2.0</h3>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white"></h3>
                             <time className="block mb-2 text-xl font-normal leading-none text-gray-400 dark:text-gray-500">Notre Dame college Mymensingh </time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">Science(2017-2019)</p>
                         </div>
@@ -54,7 +54,7 @@ const Education = () => {
                             <div className="hidden sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
                         </div>
                         <div className="mt-3 sm:pe-8">
-                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Flowbite Library v1.3.0</h3>
+                            <h3 className="text-lg font-semibold text-gray-900 dark:text-white"></h3>
                             <time className="block mb-2 text-xl font-normal leading-none text-gray-400 dark:text-gray-500">Milestone school and college</time>
                             <p className="text-base font-normal text-gray-500 dark:text-gray-400">(2015-2017)</p>
                         </div>

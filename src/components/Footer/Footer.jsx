@@ -1,29 +1,12 @@
-import React from 'react';
-import './Footer.css'
+
 const Footer = () => {
   return (
-    <>
-      <div className="header">
-        <div className="inner-header flex">
-          <h1>Simple CSS Waves</h1>
-        </div>
-
-        <svg className="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-          <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
-          <g className="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-          </g>
-        </svg>
+    <footer className='px-4 divide-y   text-gray-800 relative bottom-0 left-0'>
+      <div className='py-6 text-sm text-center text-gray-400'>
+         MD. Mostafizur Rahman | © 2024
       </div>
+    </footer>
+  )
+}
 
-      <div className="content flex">
-        <p>EL Creative Organization</p>
-      </div>
-    </>
-  );
-};
-
-export default Footer;
+export default Footer

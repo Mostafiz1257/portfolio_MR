@@ -36,15 +36,15 @@ const Contract = () => {
     }
 
     return (
-        <div className='grid md:grid-cols-2 md:mt-12'>
-            <form className="space-y-4 mx-auto w-3/4" onSubmit={handleSubmit}>
+        <div className='grid md:grid-cols-2 md:mt-12 md:gap-6'>
+            <form className="space-y-4 md:px-12 mx-auto w-full" onSubmit={handleSubmit}>
                 <div>
                     <p className=' text-teal-700'>Name*</p>
                     <input type="text" name="name" value={name} onChange={handleChange} placeholder="Enter your name" className="border border-3 border-teal-800 w-full h-12 pl-3" required />
                 </div>
                 <div>
                     <p className=' text-teal-700'>Email*</p>
-                    <input type="email" name="email"  value={email} onChange={handleChange} placeholder="Enter your email" className="border border-3 border-teal-800 w-full h-12 pl-3" required />
+                    <input type="email" name="email" value={email} onChange={handleChange} placeholder="Enter your email" className="border border-3 border-teal-800 w-full h-12 pl-3" required />
                 </div>
                 <div>
                     <p className=' text-teal-700'>Password*</p>
@@ -56,12 +56,12 @@ const Contract = () => {
                 </div>
                 <button type="submit" className={`bg-teal-800 text-white py-3 px-5 rounded-sm ${!(name && email && password) ? 'cursor-not-allowed opacity-50' : ''}`} disabled={!(name && email && password)}>Submit</button>
             </form>
-            <div className=' space-y-12 w-3/4 md:mt-0 mt-6 '>
+            <div className=' space-y-12 w-full md:mt-0 mt-6 md:px-12'>
                 <div className='w-ful h-[96px] pl-3 flex item-center bg-teal-800 text-white'>
                     <div>
                         <IoCallOutline className=' text-6xl p-3'></IoCallOutline>
                     </div>
-                    <div className='font-bold md:p-0 p-3'>
+                    <div className='font-bold  p-3'>
                         <p>Phone</p>
                         <p>+8801672589498</p>
                         <p>+8801312645183</p>
@@ -71,7 +71,7 @@ const Contract = () => {
                     <div className='md:p-0 p-3'>
                         <MdOutlineMail className=' text-6xl p-3'></MdOutlineMail>
                     </div>
-                    <div className='font-bold '>
+                    <div className='font-bold p-3'>
                         <p>Email</p>
                         <p className='block sm:inline-block w-full sm:w-auto'>mostafiz.cse.1257@gmail.com</p>
                         <p>+mostafiz.1257@gmail.com</p>
